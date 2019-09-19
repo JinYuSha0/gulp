@@ -1,0 +1,99 @@
+.footer {
+    .content {
+        padding: 4rem 0;
+        background-color: #212b36;
+        .item {
+            text-align: center;
+            .header-wrapper {
+                text-align: left;
+                line-height: 2rem;
+                img {
+                    margin-right: .2rem;
+                }
+            }
+            img {
+                width: 1rem;
+                height: 1rem;
+                background-size: contain;
+            }
+            span, p {
+                color: #FFFFFF;
+            }
+            .value {
+                margin: 0;
+                margin-left: 2rem;
+                text-align: left;
+                font-size: .8rem;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover > p {
+                color: #ff6231;
+            }
+        }
+        .item:first-child {
+            margin-left: -2px;
+        }
+        .icon {
+            display: inline-block;
+            text-align: center;
+            img {
+                width: 3.6rem;
+                height: 3.6rem;
+            }
+            p {
+                margin-top: .6rem;
+                margin-bottom: 0;
+                color: #FFFFFF;
+                font-size: .8rem;
+            }
+        }
+        .vertical {
+            display: inline-block;
+            background-color: #465262;
+            width: 2px;
+            height: 6rem;
+        }
+    }
+    .copyright {
+        padding: 1rem 0;
+        background-color: #11161c;
+        text-align: center;
+        p {
+            color: #FFFFFF;
+            margin: 0;
+            font-size: .8rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        .content {
+            padding: 1rem 0;
+            .icon, .vertical {
+                display: none;
+            }
+            .item:first-child {
+                display: none;
+            }
+            .item:nth-child(-n+3) {
+                margin-top: 0;
+            }
+            .item {
+                margin-top: 2rem;
+            }
+        }
+        .copyright {
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .copyright {
+        p {
+            font-size: .6rem !important;
+        }
+    }
+}

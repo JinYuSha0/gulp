@@ -1,0 +1,74 @@
+.fixedDownloadView {
+  position: fixed;
+  z-index: 9999;
+  right: 16%;
+  top: 50%;
+  display: flex;
+  flex-direction: row;
+  .content {
+    width: 14rem;
+    height: 8rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(20,20,20,0.16);
+    display: flex;
+    div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      #downloadQRCode {
+        width: 6rem;
+        height: 6rem;
+        display: contents;
+      }
+      p {
+        text-align: center;
+        font-size: .8rem;
+        margin-top: .2rem;
+        margin-bottom: 0;
+      }
+      .ovay_downloadBg {
+        width: 6rem;
+        height: 6rem;
+        background-color: #ff6531;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+  }
+  .downloadBtn {
+    width: 3rem;
+    height: 8rem;
+    background-color: #2fc576;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select:none;
+    img {
+      width: 1rem;
+      height: 2rem;
+    }
+    p {
+      color: #FFFFFF;
+      writing-mode: vertical-rl;
+      margin: 0 !important;
+      display: inline-block;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fixedDownloadView {
+    display: none;
+  }
+}
