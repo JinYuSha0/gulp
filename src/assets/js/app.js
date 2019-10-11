@@ -29,7 +29,7 @@ function start() {
 
     let p = window.location.pathname,
         i= '',
-        d= 'https://ovay-static.s3.ap-south-1.amazonaws.com/app/ovay-release-v1.1.6-v2.apk' // 'https%3a%2f%2fplay.google.com%2fstore%2fapps%2fdetails%3fid%3dcom.junxing.ovay'
+        d= 'https://ovay-static.s3.ap-south-1.amazonaws.com/app/ovay-armeabi-v7a-release-v1.1.8.apk' // 'https%3a%2f%2fplay.google.com%2fstore%2fapps%2fdetails%3fid%3dcom.junxing.ovay'
 
     isMobile()
         ? (
